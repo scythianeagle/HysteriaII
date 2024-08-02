@@ -87,7 +87,7 @@ auth: $new_password
 transport:
   type: udp
 tls:
-  sni: bing.com
+  sni: ii.saka-eagle.icu
   insecure: true
 bandwidth:
   up: 100 mbps
@@ -262,7 +262,7 @@ auth: $password
 transport:
   type: udp
 tls:
-  sni: bing.com
+  sni: ii.saka-eagle.icu
   insecure: true
 bandwidth:
   up: 100 mbps

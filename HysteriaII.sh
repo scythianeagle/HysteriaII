@@ -87,7 +87,7 @@ auth: $new_password
 transport:
   type: udp
 tls:
-  sni: ii.scythian-arch.site
+  sni: ii.serpent-saka.cfd
   insecure: true
 bandwidth:
   up: 100 mbps
@@ -110,7 +110,7 @@ http:
             echo ""
 
             echo "NekoBox/NekoRay URL:"
-            nekobox_url="hysteria2://$new_password@$PUBLIC_IP:$new_port/?insecure=1&sni=ii.scythian-arch.site"
+            nekobox_url="hysteria2://$new_password@$PUBLIC_IP:$new_port/?insecure=1&sni=ii.serpent-saka.cfd"
             echo "$nekobox_url"
             echo ""
             exit 0
@@ -262,7 +262,7 @@ auth: $password
 transport:
   type: udp
 tls:
-  sni: ii.scythian-arch.site
+  sni: ii.serpent-saka.cfd
   insecure: true
 bandwidth:
   up: 100 mbps
@@ -286,7 +286,7 @@ echo "$v2rayN_config"
 echo ""
 echo "NekoBox/NekoRay URL:"
 echo ""
-nekobox_url="hysteria2://$password@$PUBLIC_IP:$port/?insecure=1&sni=ii.scythian-arch.site"
+nekobox_url="hysteria2://$password@$PUBLIC_IP:$port/?insecure=1&sni=ii.serpent-saka.cfd"
 echo ""
 echo "$nekobox_url"
 echo ""

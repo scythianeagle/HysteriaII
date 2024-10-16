@@ -214,12 +214,12 @@ resolver:
   tls:
     addr: 1.1.1.1:853
     timeout: 10s
-    sni: ii.serpent-saka.cfd
+    sni: cloudflare-dns.com
     insecure: false
   https:
     addr: 1.1.1.1:443
     timeout: 10s
-    sni: ii.serpent-saka.cfd
+    sni: cloudflare-dns.com
     insecure: false"
     
 echo "$config_yaml" > config.yaml

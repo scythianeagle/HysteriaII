@@ -170,7 +170,7 @@ chmod 755 "$BINARY_NAME"
 
 # Step 3: Create self-signed certs
 openssl ecparam -genkey -name prime256v1 -out ca.key
-openssl req -new -x509 -days 36500 -key ca.key -out ca.crt -subj "/CN=ii.saka-eagle.icu"
+openssl req -new -x509 -days 36500 -key ca.key -out ca.crt -subj "/CN=bing.com"
 
 # Step 4: Prompt user for input
 echo ""
@@ -290,4 +290,3 @@ nekobox_url="hysteria2://$password@$PUBLIC_IP:$port/?insecure=1&sni=ii.saka-eagl
 echo ""
 echo "$nekobox_url"
 echo ""
-ightmare.

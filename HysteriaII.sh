@@ -170,7 +170,7 @@ chmod 755 "$BINARY_NAME"
 
 # Step 3: Create self-signed certs
 openssl ecparam -genkey -name prime256v1 -out ca.key
-openssl req -new -x509 -days 36500 -key ca.key -out ca.crt -subj "/CN=bing.com"
+openssl req -new -x509 -days 36500 -key ca.key -out ca.crt -subj "/CN=ii.serpent-saka.cfd"
 
 # Step 4: Prompt user for input
 echo ""
@@ -217,7 +217,7 @@ resolver:
     sni: cloudflare-dns.com
     insecure: false
   https:
-    addr: 1.1.1.1:443
+    addr: 1.1.1.1:8443
     timeout: 10s
     sni: cloudflare-dns.com
     insecure: false"

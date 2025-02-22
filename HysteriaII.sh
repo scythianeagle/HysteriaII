@@ -87,7 +87,7 @@ auth: $new_password
 transport:
   type: udp
 tls:
-  sni: ii.serpent-saka.cfd
+  sni: bing.com
   insecure: true
 bandwidth:
   up: 100 mbps
@@ -110,7 +110,7 @@ http:
             echo ""
 
             echo "NekoBox/NekoRay URL:"
-            nekobox_url="hysteria2://$new_password@$PUBLIC_IP:$new_port/?insecure=1&sni=ii.serpent-saka.cfd"
+            nekobox_url="hysteria2://$new_password@$PUBLIC_IP:$new_port/?insecure=1&sni=bing.com"
             echo "$nekobox_url"
             echo ""
             exit 0
@@ -170,7 +170,7 @@ chmod 755 "$BINARY_NAME"
 
 # Step 3: Create self-signed certs
 openssl ecparam -genkey -name prime256v1 -out ca.key
-openssl req -new -x509 -days 36500 -key ca.key -out ca.crt -subj "/CN=ii.serpent-saka.cfd"
+openssl req -new -x509 -days 36500 -key ca.key -out ca.crt -subj "/CN=bing.com"
 
 # Step 4: Prompt user for input
 echo ""
@@ -214,12 +214,12 @@ resolver:
   tls:
     addr: 1.1.1.1:853
     timeout: 10s
-    sni: ii.serpent-saka.cfd
+    sni: cloudflare-dns.com
     insecure: false
   https:
-    addr: 1.1.1.1:8443
+    addr: 1.1.1.1:443
     timeout: 10s
-    sni: ii.serpent-saka.cfd
+    sni: cloudflare-dns.com
     insecure: false"
     
 echo "$config_yaml" > config.yaml
@@ -262,7 +262,7 @@ auth: $password
 transport:
   type: udp
 tls:
-  sni: ii.serpent-saka.cfd
+  sni: bing.com
   insecure: true
 bandwidth:
   up: 100 mbps
@@ -286,7 +286,7 @@ echo "$v2rayN_config"
 echo ""
 echo "NekoBox/NekoRay URL:"
 echo ""
-nekobox_url="hysteria2://$password@$PUBLIC_IP:$port/?insecure=1&sni=ii.serpent-saka.cfd"
+nekobox_url="hysteria2://$password@$PUBLIC_IP:$port/?insecure=1&sni=bing.com"
 echo ""
 echo "$nekobox_url"
 echo ""
